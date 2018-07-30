@@ -38,7 +38,7 @@ public class Test004 extends SimpleApplication {
 
     //matTerrain.getAdditionalRenderState().setWireframe(true);
     //matTerrain.getAdditionalRenderState().setLineWidth(1f);
-    
+
     AbstractHeightMap heightmap = null;
     Texture heightMapImage = assetManager.loadTexture("Textures/Terrain/splat/mountains512.png");
     heightmap = new ImageBasedHeightMap(heightMapImage.getImage());

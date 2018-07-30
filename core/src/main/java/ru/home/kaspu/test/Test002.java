@@ -29,7 +29,7 @@ public class Test002 extends SimpleApplication {
 
         //Sphere sphereMesh = new Sphere(32, 32, 3f);
        
-        Cylinder sphereMesh = new Cylinder(100, 100, 2f, 4f, 6f, true, false);
+        Cylinder sphereMesh = new Cylinder(70, 70, 1.5f, 3f, 4f, true, false);
         Geometry sphereGeo = new Geometry("Shiny rock", sphereMesh);
         //sphereMesh.setTextureMode(Sphere.TextureMode.Projected); // better quality on spheres
         TangentBinormalGenerator.generate(sphereMesh);           // for lighting effect
@@ -41,8 +41,8 @@ public class Test002 extends SimpleApplication {
         sphereMat.setColor("Diffuse", ColorRGBA.White);
         sphereMat.setColor("Specular", ColorRGBA.White);
         sphereMat.setFloat("Shininess", 82f);  // [0,128]
-        sphereMat.getAdditionalRenderState().setWireframe(true);
-        sphereMat.getAdditionalRenderState().setLineWidth(1f);
+//        sphereMat.getAdditionalRenderState().setWireframe(true);
+//        sphereMat.getAdditionalRenderState().setLineWidth(1f);
         sphereGeo.setMaterial(sphereMat);
         sphereGeo.setLocalTranslation(0, 2, -2); 
         sphereGeo.rotate(1.6f, 0, 0);         

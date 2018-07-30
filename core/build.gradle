@@ -5,11 +5,11 @@ sourceCompatibility = '1.8'
 sourceSets.main.resources.srcDirs += "src/main/assets"
 
 dependencies {
-    implementation 'org.jmonkeyengine:jme3-core:3.2.0-stable'
-    implementation "org.jmonkeyengine:jme3-effects:3.2.0-stable"
-    implementation "org.jmonkeyengine:jme3-jogg:3.2.0-stable"
-    implementation "org.jmonkeyengine:jme3-plugins:3.2.0-stable"
-    implementation "org.jmonkeyengine:jme3-terrain:3.2.0-stable"
+    implementation 'org.jmonkeyengine:jme3-core:3.2.1-stable'
+    implementation "org.jmonkeyengine:jme3-effects:3.2.1-stable"
+    implementation "org.jmonkeyengine:jme3-jogg:3.2.1-stable"
+    implementation "org.jmonkeyengine:jme3-plugins:3.2.1-stable"
+    implementation "org.jmonkeyengine:jme3-terrain:3.2.1-stable"
 }
 
 
