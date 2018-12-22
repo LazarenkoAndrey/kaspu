@@ -1,15 +1,14 @@
 apply plugin: 'java'
+apply plugin: 'idea'
 
 sourceCompatibility = '1.8'
 
-sourceSets.main.resources.srcDirs += "src/main/assets"
-
 dependencies {
-    implementation 'org.jmonkeyengine:jme3-core:3.2.1-stable'
-    implementation "org.jmonkeyengine:jme3-effects:3.2.1-stable"
-    implementation "org.jmonkeyengine:jme3-jogg:3.2.1-stable"
-    implementation "org.jmonkeyengine:jme3-plugins:3.2.1-stable"
-    implementation "org.jmonkeyengine:jme3-terrain:3.2.1-stable"
+    implementation group: 'org.jmonkeyengine', name: 'jme3-core', version: jmeVersion
+    implementation group: 'org.jmonkeyengine', name: 'jme3-effects', version: jmeVersion
+    implementation group: 'org.jmonkeyengine', name: 'jme3-jogg', version: jmeVersion
+    implementation group: 'org.jmonkeyengine', name: 'jme3-plugins', version: jmeVersion
+    implementation group: 'org.jmonkeyengine', name: 'jme3-terrain', version: jmeVersion
+    implementation project(':external')
 }
-
 

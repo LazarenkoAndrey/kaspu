@@ -11,7 +11,6 @@ import com.jme3.input.controls.KeyTrigger;
 import com.jme3.light.DirectionalLight;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
-import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Node;
 
@@ -28,7 +27,7 @@ public class Test003 extends SimpleApplication implements AnimEventListener {
     dl.setDirection(new Vector3f(-0.1f, -1f, -1).normalizeLocal());
     
     rootNode.addLight(dl);
-    player = (Node) assetManager.loadModel("Models/Ninja/Ninja.mesh.xml");
+    player = (Node) assetManager.loadModel("src/main/assets/Models/Ninja/Ninja.mesh.xml");
     player.setLocalScale(0.02f);
     player.rotate(0f, FastMath.PI *1.2f, 0f);
     rootNode.attachChild(player);

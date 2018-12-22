@@ -19,19 +19,19 @@ public class Test004 extends SimpleApplication {
     flyCam.setMoveSpeed(50);
 
     matTerrain = new Material(assetManager, "Common/MatDefs/Terrain/Terrain.j3md");
-    matTerrain.setTexture("Alpha", assetManager.loadTexture("Textures/Terrain/splat/alphamap.png"));
+    matTerrain.setTexture("Alpha", assetManager.loadTexture("src/main/assets/Textures/Terrain/splat/alphamap.png"));
 
-    Texture grass = assetManager.loadTexture("Textures/Terrain/splat/grass.jpg");
+    Texture grass = assetManager.loadTexture("src/main/assets/Textures/Terrain/splat/grass.jpg");
     grass.setWrap(WrapMode.Repeat);
     matTerrain.setTexture("Tex1", grass);
     matTerrain.setFloat("Tex1Scale", 64f);
     
-    Texture dirt = assetManager.loadTexture("Textures/Terrain/splat/dirt.jpg");
+    Texture dirt = assetManager.loadTexture("src/main/assets/Textures/Terrain/splat/dirt.jpg");
     dirt.setWrap(WrapMode.Repeat);
     matTerrain.setTexture("Tex2", dirt);
     matTerrain.setFloat("Tex2Scale", 32f);
 
-    Texture rock = assetManager.loadTexture("Textures/Terrain/splat/road.jpg");
+    Texture rock = assetManager.loadTexture("src/main/assets/Textures/Terrain/splat/road.jpg");
     rock.setWrap(WrapMode.Repeat);
     matTerrain.setTexture("Tex3", rock);
     matTerrain.setFloat("Tex3Scale", 128f);
@@ -40,7 +40,7 @@ public class Test004 extends SimpleApplication {
     //matTerrain.getAdditionalRenderState().setLineWidth(1f);
 
     AbstractHeightMap heightmap = null;
-    Texture heightMapImage = assetManager.loadTexture("Textures/Terrain/splat/mountains512.png");
+    Texture heightMapImage = assetManager.loadTexture("src/main/assets/Textures/Terrain/splat/mountains512.png");
     heightmap = new ImageBasedHeightMap(heightMapImage.getImage());
     heightmap.load();
     int patchSize = 65;
