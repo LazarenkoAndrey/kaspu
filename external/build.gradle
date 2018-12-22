@@ -2,6 +2,8 @@ apply plugin: 'java'
 apply plugin: 'idea'
 
 sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
 sourceSets.main.resources.srcDirs += 'assets'
 
 dependencies {
